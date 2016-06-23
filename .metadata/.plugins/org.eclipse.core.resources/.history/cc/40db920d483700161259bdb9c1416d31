@@ -1,0 +1,19 @@
+package testng;
+
+public class DataProvider {
+	
+	@Test
+	public static void display(){
+		
+	}
+	
+	public Object[][] getData(){
+		Object[][] data = new Object[3][2];
+		
+		data[0][0] = 1 ;
+		data[0][1] = "Sonali";
+		
+		return data;
+	}
+
+}

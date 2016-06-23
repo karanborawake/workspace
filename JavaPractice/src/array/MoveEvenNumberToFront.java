@@ -1,0 +1,46 @@
+package array;
+
+import java.util.Scanner;
+
+public class MoveEvenNumberToFront {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scannerObj = new Scanner(System.in);
+		System.out.println("Please enter a size of array :: ");
+		int size = scannerObj.nextInt();
+		int[] array = new int[size];
+		System.out.println("Please enter the elements of array :: "); 
+		
+		for (int i = 0; i < size; i++) {
+			array [i] = scannerObj.nextInt();
+		}
+		printArray(array);
+		moveEven(array);
+		printArray(array);
+
+	}
+	
+	public static void printArray(int[] arr){
+		System.out.print("Array is :: ");
+		for (int i : arr) {
+			System.out.print(i + " ");
+		}
+		System.out.println();
+	}
+	
+	public static void moveEven(int[] arr){
+		int temp = 0 , a = 0;
+		for (int i = 0; i < arr.length; i++) {
+			if(arr[i] % 2 == 0){
+				for (int j = i; j > a ; j--) {
+					temp = arr[j-1];
+					arr[j-1] = arr[j];
+					arr[j] = temp;
+				}
+				a++;
+			}
+		}
+	}
+
+}

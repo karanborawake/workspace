@@ -1,0 +1,34 @@
+package collection;
+
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
+
+public class HashsetRemoveDuplicates {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int[] array = { 1 , 7, 5, 2, 1, 3 ,5 };
+		Set < Integer > hs = new HashSet<Integer>();
+		for (int i : array) {
+			hs.add(i);
+		}
+		
+		for (Integer integer : hs) {
+			System.out.print(integer + " ");
+		}
+ 
+	}
+	
+	/*public static void removeDuplicate(int[] array){
+		Map< Integer , Integer> hm = new HashMap<Integer , Integer>(); 
+		for (int i = 0; i < array.length; i++) {
+			if(array[i] == hm.containsKey(i)){
+				
+			}
+		}
+	}*/
+
+}

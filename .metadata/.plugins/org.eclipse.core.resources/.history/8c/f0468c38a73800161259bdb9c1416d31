@@ -1,0 +1,43 @@
+package collection;
+
+
+import java.util.HashMap;
+import java.util.Map;
+
+import javax.swing.plaf.basic.BasicScrollPaneUI.HSBChangeListener;
+
+
+
+public class HashmapString {
+
+	public static void main(String[] args){
+		int[] array = new int[]{7, 9, 10 , 1, 3 ,3 ,7 ,1};
+		Map<Integer , Integer > hashmapObj = new HashMap<Integer , Integer>();
+
+		for(int i = 0; i< array.length ; i++){
+			if(hashmapObj.containsKey(array[i])){
+				hashmapObj.put(array[i], hashmapObj.get(array[i])+1);
+			}else {
+				hashmapObj.put(array[i], 1);
+			}
+		}
+	/*	for (int i : hashmapObj.keySet()) {
+			if(hashmapObj.get(i)){
+				System.out.println("First non repeated integer :: " + hashmapObj.get(i));
+			}
+			System.out.println( i + " ::  "+hashmapObj.get(i));
+		}*/
+		
+		for (Map.Entry<Integer, Integer> entry : hashmapObj.entrySet()) {
+			System.out.println(entry.getKey() + " = " + entry.getValue());
+			if(entry.getValue() == 1 ){
+				System.out.println("First non repeated integer :: " + entry.getKey());
+				return;
+			}
+			
+		    //System.out.println(entry.getKey() + " = " + entry.getValue());
+		}
+	}
+
+	
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [firstSuite]">
+  <test name="particularTestClasses(failed)">
+    <groups>
+      <run>
+        <include name="critical"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="restAutomation.Rest.test.LandLordTest">
+        <methods>
+          <include name="postLanlord01" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- restAutomation.Rest.test.LandLordTest -->
+    </classes>
+  </test> <!-- particularTestClasses(failed) -->
+</suite> <!-- Failed suite [firstSuite] -->

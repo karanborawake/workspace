@@ -1,0 +1,23 @@
+package testng;
+
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+public class DataProvider1 {
+	
+	@Test
+	public static void display(){
+		
+	}
+	
+	@DataProvider
+	public Object[][] getData(){
+		Object[][] data = new Object[3][2];
+		
+		data[0][0] = 1 ;
+		data[0][1] = "Sonali";
+		
+		return data;
+	}
+
+}

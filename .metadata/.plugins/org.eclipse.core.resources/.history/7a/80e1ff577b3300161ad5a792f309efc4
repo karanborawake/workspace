@@ -1,0 +1,42 @@
+package random;
+
+import java.util.ArrayList;
+import java.util.Random;
+import java.util.Scanner;
+
+public class MathSeriesProblem {
+
+	// TODO:: Return random int number between 1 and user entered number i.e 1..100
+	static int getRandomNumer(int maxLimit) {
+		
+		// TODO
+		Random randomObj = new Random();
+		
+		int randomNumber = randomObj.nextInt(100) + 1;
+	
+		return randomNumber;
+	}
+	
+	// TODO:: Get Number from user e.g. 100
+	static int getNumberFromUser(){
+	int inputInt = 0;
+	Scanner scannerObj = new Scanner(System.in);
+	inputInt = scannerObj.nextInt();
+	return inputInt;
+	}
+	
+	//TODO:: Generate array of size taken from user i.e 100 
+	ArrayList genarateArrayList(int arrayListSize){
+	ArrayList myArrayList = null;
+	
+	return myArrayList;
+	}
+	
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

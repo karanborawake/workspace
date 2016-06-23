@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="1521" started-at="2016-06-13T02:00:52Z" finished-at="2016-06-13T02:00:53Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="1521" started-at="2016-06-13T02:00:52Z" finished-at="2016-06-13T02:00:53Z">
+      <class name="com.maventest.sample.RestTest">
+        <test-method status="PASS" signature="getRequestFindCapital()[pri:0, instance:com.maventest.sample.RestTest@2b98378d]" name="getRequestFindCapital" duration-ms="1501" started-at="2016-06-12T19:00:52Z" finished-at="2016-06-12T19:00:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getRequestFindCapital -->
+      </class> <!-- com.maventest.sample.RestTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

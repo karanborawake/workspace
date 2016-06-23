@@ -1,0 +1,34 @@
+package string;
+
+public class ReverseSequence {
+
+	public static String reverseString(String input){
+		String output = "";
+		for (int i = input.length()-1; i >= 0; i--) {
+			output = output + input.charAt(i);
+		}
+		return output;
+	}
+	public static void main(String[] args) {
+		String str1 = "This is a dog";
+		String output = "";
+		String myWord="";
+		//output : "dog a is This";
+		for (int i = str1.length()-1; i >= 0; i--) {
+			if(str1.charAt(i) == ' '){
+				
+				output = output + reverseString(myWord) + " ";
+				myWord="";
+			}else{
+				myWord = myWord + str1.charAt(i);
+			}
+			
+		}
+		
+		output = output + reverseString(myWord);
+		System.out.println(output);
+		
+
+	}
+
+}

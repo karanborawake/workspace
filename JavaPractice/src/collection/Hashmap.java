@@ -1,0 +1,29 @@
+package collection;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Hashmap {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int[] array = { 1 , 4 ,5 , 6, 7 };
+		
+		Map<Integer, Integer> myMap = new HashMap<Integer,Integer>();
+		
+		for (int i = 0 ;i < array.length; i++) {
+			myMap.put(i, array[i]);
+			System.out.println(array[i]);
+		}
+		
+		/*for (Map.Entry<Integer, Integer> entry : myMap.entrySet()) {
+			System.out.println(entry.getKey()+" : "+entry.getValue());
+		}*/
+		
+		for (int i : myMap.keySet()) {
+			System.out.println(i +" : "+ myMap.get(i));
+		}
+	}
+
+}

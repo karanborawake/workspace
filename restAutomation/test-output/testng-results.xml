@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="firstSuite" duration-ms="5476" started-at="2016-05-21T19:13:32Z" finished-at="2016-05-21T19:13:38Z">
+    <groups>
+      <group name="critical">
+        <method signature="LandLordTest.postLanlord01(restAutomation.Rest.main.Landlord)[pri:1, instance:restAutomation.Rest.test.LandLordTest@d7b1517]" name="postLanlord01" class="restAutomation.Rest.test.LandLordTest"/>
+      </group> <!-- critical -->
+    </groups>
+    <test name="particularTestClasses" duration-ms="5476" started-at="2016-05-21T19:13:32Z" finished-at="2016-05-21T19:13:38Z">
+      <class name="restAutomation.Rest.test.LandLordTest">
+        <test-method status="PASS" signature="postLanlord01(restAutomation.Rest.main.Landlord)[pri:1, instance:restAutomation.Rest.test.LandLordTest@d7b1517]" name="postLanlord01" duration-ms="5056" started-at="2016-05-21T12:13:32Z" data-provider="validLandlords" finished-at="2016-05-21T12:13:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[restAutomation.Rest.main.Landlord@783e6358]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postLanlord01 -->
+        <test-method status="PASS" signature="postLanlord01(restAutomation.Rest.main.Landlord)[pri:1, instance:restAutomation.Rest.test.LandLordTest@d7b1517]" name="postLanlord01" duration-ms="364" started-at="2016-05-21T12:13:38Z" data-provider="validLandlords" finished-at="2016-05-21T12:13:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[restAutomation.Rest.main.Landlord@6b9267b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postLanlord01 -->
+      </class> <!-- restAutomation.Rest.test.LandLordTest -->
+    </test> <!-- particularTestClasses -->
+  </suite> <!-- firstSuite -->
+</testng-results>

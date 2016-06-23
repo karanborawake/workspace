@@ -1,0 +1,38 @@
+package search;
+
+import java.util.Scanner;
+
+public class LinearSearch {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scannerObj = new Scanner(System.in);
+		System.out.println("Enter number of elements of array :: ");
+		int n = scannerObj.nextInt();
+		int[] array = new int[n];
+		System.out.println("Enter elements :: ");
+		for (int i = 0; i < n; i++) {
+			array[i] = scannerObj.nextInt();
+		}
+		printArray(array);
+		System.out.println();
+		int key = 5;
+		System.out.println(" Search key "+ key +" is found at index :: "+ linearSearch(array, 5));
+	}
+	
+	public static void printArray(int[] array){
+		for (int i = 0; i < array.length; i++) {
+			System.out.print(array[i] + " " );
+		}
+	}
+	
+	public static int linearSearch(int[] array , int key){
+		for (int i = 0; i < array.length; i++) {
+			if(array[i] == key){
+				return i;
+			}
+		}
+		return -1;
+	}
+
+}

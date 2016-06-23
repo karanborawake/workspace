@@ -1,0 +1,33 @@
+package random;
+
+import java.util.ArrayList;
+
+public class MathSeriesProblem {
+
+	// TODO:: Return random int number 
+	static int getRandomNumer(int maxLimit) {
+		int randomNumber = 0;
+		// TODO
+		
+		return randomNumber;
+	}
+	
+	// TODO
+	static int getNumberFromUser(){
+	int inputInt = 0;
+	
+	return inputInt;
+	}
+	
+	ArrayList genarateArrayList(int arrayListSize){
+	ArrayList myArrayList = null;
+	
+	return myArrayList;
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

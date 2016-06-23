@@ -1,0 +1,13 @@
+package testng;
+
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+
+public class DataProvider {
+
+	@Test
+	@Parameters("Myname")
+	public static void parameterisedTest(String Myname){
+		System.out.println("My name is :: " + Myname);
+	}
+}

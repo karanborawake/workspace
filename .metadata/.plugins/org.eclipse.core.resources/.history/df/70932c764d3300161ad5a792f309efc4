@@ -1,0 +1,25 @@
+package array;
+
+public class MaxTwoNumbers {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] num = { 1 , 5 ,7 ,4 ,8 , 9};
+	}
+	
+	public static void printTwoMaxNumbers(int[] array){
+		int maxOne = 0, maxTwo = 0;
+		for (int i = 1; i < array.length; i++) {
+			if(array[i] > array[maxOne]){
+				array[maxTwo] = array[maxOne];
+				array[maxOne] = array[i];
+			}else if(array[i] > array[maxTwo]){
+				array[maxTwo] = array[i];
+			}
+			
+		}
+		System.out.println(maxOne);
+		System.out.println(maxTwo);
+	}
+
+}

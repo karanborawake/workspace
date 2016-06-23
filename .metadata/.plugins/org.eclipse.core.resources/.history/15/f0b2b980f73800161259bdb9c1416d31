@@ -1,0 +1,30 @@
+package assignment;
+
+import java.util.Scanner;
+
+public class ReverseNumber {
+	//456
+	public static int reverse(int number){
+		int reverseNumber = 0;
+		while(number > 0){
+			reverseNumber = reverseNumber * 10;
+			reverseNumber = reverseNumber + number % 10;
+			number = number / 10 ;
+		}
+		
+		return reverseNumber;
+	}
+	
+	public static boolean isPalindrome(int number){
+		
+		return false;	
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Please enter a number :: ");
+		Scanner scannerObj = new Scanner(System.in);
+		int number = scannerObj.nextInt();
+		
+
+	}
+}
